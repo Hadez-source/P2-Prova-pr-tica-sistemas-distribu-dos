@@ -1,0 +1,13 @@
+Replicação e consistencia
+Alteração feita no código
+
+def sincronizar():
+    replica["estoque"] = principal["estoque"]
+
+    def consultar_estoque():
+         if principal["online"]:
+            return (
+                "PRINCIPAL",
+                principal["estoque"]
+
+troca da palavra replica repetida por principal, pois quero sincronizar com o estoque principal
