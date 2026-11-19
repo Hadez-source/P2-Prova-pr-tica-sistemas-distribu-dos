@@ -116,3 +116,21 @@ print(
     nome,
     estoque
 )
+
+
+
+
+Resposta do Sistema:
+
+=== CENTRAL DE PEDIDOS ===
+Limite Simultaneo: 10
+pedidos confirmados: [101, 102, 103]
+Pedidos confirmados: [101, 102, 103]
+Replica antes: 10
+Replica depois: 10
+Traceback (most recent call last):
+  File "c:\Users\aluno\Downloads\Simulado_distribuidos\central_pedidos.py", line 106, in <module>
+    nome, estoque = consultar_estoque
+                    ^^^^^^^^^^^^^^^^^
+
+Dá um erro no consultar estoque
