@@ -11,3 +11,29 @@ def sincronizar():
                 principal["estoque"]
 
 troca da palavra replica repetida por principal, pois quero sincronizar com o estoque principal
+
+e retirada o pedido 103 posteriormente do código ficando apenas 101 e 102:
+
+print(
+    "Limite Simultaneo:",
+    MAXIMO_SIMULTANEO
+)
+
+trabalhadores = [
+    threading.Thread(
+        target=processar_pedido,
+        args=(numero,)
+    )
+    for numero in [101, 102]
+]
+
+
+retorno para mim:
+
+=== CENTRAL DE PEDIDOS ===
+Limite Simultaneo: 2
+pedidos confirmados: [101, 102]
+Pedidos confirmados: [101, 102]
+Replica antes: 10
+Replica depois: 8
+Traceback (most recent call last):
