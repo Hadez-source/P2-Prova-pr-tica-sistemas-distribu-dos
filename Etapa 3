@@ -20,3 +20,13 @@ semaforo = threading.Semaphore(MAXIMO_SIMULTANEO)
 trava = threading.Lock()
 
 troquei o valor do estoque principal para 2, pois assim o retorno final de limite simultaneo será 2 apenas.
+
+
+Resultado após execução:
+=== CENTRAL DE PEDIDOS ===
+Limite Simultaneo: 2
+pedidos confirmados: [102, 103]
+Pedidos confirmados: [102, 103]
+Replica antes: 10
+Replica depois: 10
+Traceback (most recent call last):
